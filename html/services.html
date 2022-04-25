@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang=en>
+	<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Nice Pizza Menu Bootstrap Edition</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+   <body>
+         <!-- Portfolio Grid-->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Menu</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" height="100" src="../images/pizza.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Threads</div>
+                                <div class="portfolio-caption-subheading text-muted">Illustration</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" height="100" src="../images/wings.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Explore</div>
+                                <div class="portfolio-caption-subheading text-muted">Graphic Design</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" height="100" src="../images/lamb.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Finish</div>
+                                <div class="portfolio-caption-subheading text-muted">Identity</div>
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+            </div>
+        </section>
+   	  <nav>
+		<a href="../index.html">Back to main page</a>
+	  </nav>
+      <h2 class="menu">~*Our Menu*~</h2>
+	  <ul>
+	    <!--Menu with 3 items-->
+		<li>Pizza<br><img src="../images/pizza.jpg" height="100" alt="pizza"></li>
+		<li>Chicken Wings<br><img src="../images/wings.jpg" height="100" alt="wings">
+			<ol>
+				<li>Buffalo</li>
+				<li>BBQ</li>
+				<li>Parmesean<br></li>
+			</ol>
+		</li>
+		<li>Lamb chops<br><img src="../images/lamb.jpg" height="100" alt="lamb"></li>
+	  </ul>
+	  <pre>   </pre>
+	  <!--A pizza delivery form-->
+	  <h2 class="deliveryHeader">Pizza Delivery</h2>
+	  <p class="deliveryInstructions">Below you can make your own <i>pizza</i> and have it delivered at your home in record time!</p>
+	  <h3 class="cost">Pizza cost</h3>
+	  <table>
+		<tr>
+			<th class="sizeTable">Size</th>
+			<th id="small">Small</th>
+			<th id="medium">Medium</th>
+			<th id="large">Large</th>
+		</tr>
+		<tr>
+			<th>Pizza</th>
+			<th>$5</th>
+			<th>$9</th>
+			<th>$12</th>
+		</tr>
+	  </table>
+	 <form action="pizza_form.asp"> 
+	 <div>
+	  <!--Proteins-->
+	  <h3 class="protein"><label for="protein">Type of protein</label></h3>
+	   <p id="warning">Note:Unfortunately, we do <u>NOT</u> carry pineapples.</p>
+	  	<select name="protein" id="protein">
+			<option value="pepperoni">Pepperoni</option>
+			<option value="ham">Ham</option>
+			<option value="bacon">Bacon</option>
+			<option value="chicken">Chicken</option>
+			<option value="anchovies">Anchovies</option>
+			<option value="none">None</option>
+		</select>
+	  </div>
+	  <!--Amount of proteins-->
+	  <h3 class="amountProtein">Amount of protein</h3>
+		<input type="range" value="10" id="numberProtein" name="numberprotein" min="1" max="10" oninput="this.nextElementSibling.value = this.value">
+		<output>10</output>
+	  <!--Vegetables-->
+	  <h3 class="veggies">Vegetables</h3>
+        <input type="checkbox" id="mushrooms" name="mushrooms">Mushrooms
+        <input type="checkbox" id="onion" name="onion">Onions
+        <input type="checkbox" id = "greenpepper" name="greenpepper">Green pepper
+	  <!--Pizza size--> 
+		<h3 class="size">Size</h3>			
+			  <label for="small">Small</label>
+			  <input type="radio" name="size" id="small" value="small"><br>
+			  <label for="medium">Medium</label>
+			  <input type="radio" name="size" id="medium" value="medium"><br>
+			  <label for="large">Large</label>
+			  <input type="radio" name="size" id="large" value="large"><br><br>
+			  
+		<!--Special instructions-->
+		<h3 class="instructions"><label for="inst">Special Instructions</label></h3>
+			<textarea id="inst" name="inst" rows="4" cols="50" placeholder="Ex: Only half with pepperoni"></textarea>
+		<!--for space between the text boxes-->
+		<pre>   </pre>
+		<!--Fieldset for the delivery address-->
+		<fieldset>
+			<legend>Delivery Details</legend>
+			First name: <input type="text" name="fname"><br>
+			Street: <input type="text" name="address"><br>
+			Apartment(if necessary): <input type="text" name="apt"><br>
+			City: <input type="text" name="city"><br>
+			Zip Code: <input type="text" name="zip"><br>
+		</fieldset>
+		<p class="paymentDisclaimer"><em>Please note: We do not accept online payments, must pay with cash upon delivery</em></p>
+		<input type="submit" value="Submit! If you click me I'll 404">
+		</form>
+		<pre>  </pre>
+	  <nav>	  
+		<a href="../index.html">Back to main page</a>
+	  </nav>
+   </body>
+	
+</html>
